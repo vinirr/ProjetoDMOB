@@ -70,8 +70,9 @@ abstract class AbstractListaExercicios {
             method.invoke(obj, null);
             System.out.println("\n----------------------------------------------");
         }catch(Exception ex){
-            ex.printStackTrace();
-            //System.out.println(msg);
+            System.out.println("Erro ao utilizar Reflection. Não foi possível "
+                    + "instanciar a classe ou chamar o método através de uma"
+                    + " String");
         }
     };
 }
